@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Chosence;
+    src: url('fonts/Chosence_Regular.otf');
+}
+
 * {
     box-sizing: border-box;
 }
@@ -11,10 +16,10 @@ body {
   --lt-blue: #4ca5ff;
   --slate-blue: #405b87;
   --off-white: #e8e8e8;
-  
-  font-family: Chosence;
 
-  background-image: url("https://i.imgur.com/S7mhs2R.jpg");
+  font-family: Chosence, sans-serif;
+
+  background-image: url('images/background.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
 
@@ -132,7 +137,7 @@ header {
   text-align: center;
   color: var(--off-white);
   height: 350px;
-  background: url('https://i.imgur.com/r3gWC45.png') center center;
+  background: url('images/header.png') center center;
 }
 
 /* smaller than logo (also right around mobile/iPad mini size) */
