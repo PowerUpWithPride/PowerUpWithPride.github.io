@@ -72,7 +72,7 @@ p {
   padding-bottom: 13px;
 }
 
-.container p {
+.container p, .container ul {
   text-align: left;
   color: var(--dk-body);
   font-family: sans-serif;
