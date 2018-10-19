@@ -91,6 +91,22 @@ h1, h2, h3, h4, h5 {
   font-size: 48pt;
 }
 
+
+#submit-run {
+  width:450px;
+  height:100px;
+  line-height:100px;
+  margin: 25px auto 0 auto;
+  background: var(--puwp-blue);
+  border-radius: 7px;
+  font-size: 48pt;
+}
+
+#submit-run-a {
+  text-decoration: none;
+  color: var(--off-white);
+}
+
 .clear {
     clear: both;
 }
@@ -105,7 +121,7 @@ nav {
     background: rgba(51, 155, 255, 0.25);
     height: 70px;
     line-height: 70px;
-    font-size: 32pt;
+    font-size: 30pt;
 }
 
 nav ul{
@@ -192,10 +208,17 @@ header {
       margin-bottom: 10px;
     }
 
+  #submit-run {
+    width:250px;
+    height:70px;
+    line-height:70px;
+    font-size: 30px;
+    margin: 10px auto 0 auto;
+  }
 
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 414px) {
     body {
         font-size: 14px;
     }
