@@ -11,7 +11,7 @@
 html::before {
   content: ' ';
   display: block;
-  background-image: url('images/background.jpg');
+  background-image: url('images/background.png');
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -27,7 +27,9 @@ html::before {
 body {
   /* Base Variables */
   --puwp-blue: #339bff;
-  --dk-blue: #203141;
+  --puwp-purple: #502c69;/*#2c304b;*/
+  --puwp-purple-25: rgba(80, 44, 105, .25); /*rgba(44, 48, 75, .25);*/
+  --dk-blue: #2c304b; /*#203141;*/
   --mid-blue: #3596fd;
   --lt-blue: #4ca5ff;
   --slate-blue: #405b87;
@@ -75,7 +77,7 @@ p {
 .container p, .container ul {
   text-align: left;
   color: var(--dk-body);
-  font-family: sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -93,11 +95,11 @@ h1, h2, h3, h4, h5 {
 
 
 .submit-run {
-  width:450px;
+  width:350px;
   height:100px;
   line-height:100px;
-  margin: 0 auto;
-  background: var(--puwp-blue);
+  margin: 10px;
+  background: var(--puwp-purple);
   border-radius: 7px;
   font-size: 48pt;
 }
@@ -119,7 +121,7 @@ nav {
     margin: 0;
     padding: 0;
     font-weight: normal;
-    background: rgba(51, 155, 255, 0.25);
+    background: var(--puwp-purple-25);
     height: 70px;
     line-height: 70px;
     font-size: 30pt;
@@ -136,7 +138,7 @@ nav #PUWP{
   margin: 0;
   padding: 0 0.5em;
   display: inline-block;
-  background: var(--puwp-blue);
+  background: var(--puwp-purple);
 }
 
 nav li {
@@ -149,8 +151,8 @@ nav li {
   font-weight: normal;
 }
 
-table{
-  font-family: sans-serif;
+table {
+  font-family: 'Rubik', sans-serif;
   text-align: left;
 }
 nav li a {
@@ -161,7 +163,7 @@ nav li a {
 }
 
 nav li:hover {
-  background: var(--puwp-blue);
+  background: var(--puwp-purple);
 }
 
 header {
@@ -180,10 +182,46 @@ header {
     height: 480px;
 }
 
+#menu {
+  width: 50px;
+  display: none;
+}
+
 /* smaller than logo (also right around mobile/iPad mini size) */
 @media only screen and (max-width: 650px) {
     .logo {
         width: 80%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    nav {
+      height: auto;
+    }
+
+    nav li {
+      display: block;
+      text-align: right;
+    }
+
+    nav #PUWP, nav ul{
+      float: none;
+    }
+
+    nav #PUWP {
+      text-align: left;
+      display: block;
+    }
+
+    nav #menu {
+      display: block;
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    nav ul {
+      display: none;
     }
 }
 
@@ -254,7 +292,6 @@ header {
     }
     nav {
       font-size: 20px;
-      height: 50px;
       line-height: 50px;
     }
     nav li {
@@ -305,6 +342,7 @@ header {
     text-decoration: none;
     padding: 5px 10px;
 }
+
 .frost {
     opacity: .5;
     content: '';
@@ -329,6 +367,7 @@ header {
     bottom: 0;
     background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.1));
 }
+
 .button {
 
     padding: 5px 10px;
@@ -351,6 +390,7 @@ input[type="text"], input[type="email"] {
 .contact-form {
     margin-bottom: 20px;
 }
+
 .light-bar {
     background: url("../images/colors.svg") repeat-x;
 }
