@@ -11,7 +11,7 @@
 html::before {
   content: ' ';
   display: block;
-  background-image: url('images/background-tropical.png');
+  background-image: url('images/background-winter.png');
   background-position: center;
   background-size: cover;
   height: 100vh;
